@@ -30,13 +30,15 @@
         {
             hand.transform.Rotate(0, 100 * Time.deltaTime, 0);
         }
- 
-**[#1 [GameObject](https://docs.unity3d.com/ScriptReference/GameObject.html).Find("objectName") ]** 
- 
-### 2.2. Get GameObject
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+ 
+ 
+### 2.2. Handle logic in FixedUpdate()
+
+ - Trong khi Update() chỉ thực thi 1 lần/frame và **độc lập với Physical Engine** thì FixedUpdate() có thể thực thi một hoặc nhiều lần / khung hình **đồng bộ với Physical Engine**
+  ⇒ khi xử lý tác dụng lực bạn cần code trong FixedUpdate() method.
+
+**[#1 ]** 
 
 ### Executing program
 
